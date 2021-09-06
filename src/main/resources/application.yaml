@@ -1,4 +1,9 @@
 spring:
+  datasource:
+    username: curry
+    password: Ocean1109
+    url: jdbc:postgresql://152.136.110.205:8081/shopping
+    driver-class-name: org.postgresql.Driver
   application:
     name: spring-cloud-producer
 server:
@@ -10,3 +15,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://152.136.110.205:8000/eureka/,http://152.136.110.205:8001/eureka/,http://152.136.110.205:8002/eureka/
+
+
+#mybatis-plus配置控制台打印完整带参数SQL语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
