@@ -10,14 +10,14 @@ server:
   port: 9000
 eureka:
   instance:
-    instance-id: 用户行为数据服务
     prefer-ip-address: true
+    ip-address: 152.136.110.205
   client:
     service-url:
       defaultZone: http://152.136.110.205:8000/eureka/,http://152.136.110.205:8001/eureka/,http://152.136.110.205:8002/eureka/
 
 
 #mybatis-plus配置控制台打印完整带参数SQL语句
-mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

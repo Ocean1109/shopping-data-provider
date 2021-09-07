@@ -33,7 +33,7 @@ public class DataController {
     }
 
     @RequestMapping("/topProductCategory")
-    public List<TopProductCategory> topProductCategorie(){
+    public List<TopProductCategory> topProductCategory(){
         return userLogMapper.getTopProductCategory();
     }
 
