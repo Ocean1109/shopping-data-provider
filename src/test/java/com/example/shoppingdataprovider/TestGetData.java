@@ -1,6 +1,6 @@
 package com.example.shoppingdataprovider;
 
-import com.example.shoppingdataprovider.entity.AnalysisAction;
+import com.example.shoppingdataprovider.entity.*;
 import com.example.shoppingdataprovider.mapper.UserLogMapper;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.annotation.MapperScan;
@@ -21,8 +21,8 @@ public class TestGetData {
     UserLogMapper userLogMapper;
     @Test
     public void getData(){
-        List<AnalysisAction> result = new ArrayList<>();
-        result = userLogMapper.getAnalysisAction();
+        List<CompareProvince> result = new ArrayList<>();
+        result = userLogMapper.getCompareProvince();
         System.out.println(1);
     }
 

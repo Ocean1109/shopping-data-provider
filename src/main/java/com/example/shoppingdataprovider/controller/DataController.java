@@ -1,6 +1,6 @@
 package com.example.shoppingdataprovider.controller;
 
-import com.example.shoppingdataprovider.entity.AnalysisAction;
+import com.example.shoppingdataprovider.entity.*;
 import com.example.shoppingdataprovider.mapper.UserLogMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +20,26 @@ public class DataController {
     @RequestMapping("/analysisAction")
     public List<AnalysisAction> analysisAction(){
         return userLogMapper.getAnalysisAction();
+    }
+
+    @RequestMapping("/compareNum")
+    public List<CompareNum> compareNum(){
+        return userLogMapper.getCompareNum();
+    }
+
+    @RequestMapping("/compareAge")
+    public List<CompareAge> compareAge(){
+        return userLogMapper.getCompareAge();
+    }
+
+    @RequestMapping("/topProductCategory")
+    public List<TopProductCategory> topProductCategorie(){
+        return userLogMapper.getTopProductCategory();
+    }
+
+    @RequestMapping("/compareProvince")
+    public List<CompareProvince> compareProvinces(){
+        return userLogMapper.getCompareProvince();
     }
 
     @RequestMapping("/hello")
